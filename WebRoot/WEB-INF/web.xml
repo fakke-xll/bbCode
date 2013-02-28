@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>UpServlet</servlet-name>
+    <servlet-class>cn.mrlun.servlet.UpServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UpServlet</servlet-name>
+    <url-pattern>/upServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpServlet2</servlet-name>
+    <servlet-class>cn.mrlun.servlet.UpServlet2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SaveServlet</servlet-name>
+    <servlet-class>cn.mrlun.servlet.SaveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FileSizeServlet</servlet-name>
+    <servlet-class>cn.mrlun.servlet.FileSizeServlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>UpServlet2</servlet-name>
+    <url-pattern>/upServlet2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SaveServlet</servlet-name>
+    <url-pattern>/saveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileSizeServlet</servlet-name>
+    <url-pattern>/FileSizeServlet</url-pattern>
+  </servlet-mapping>
+ 
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
