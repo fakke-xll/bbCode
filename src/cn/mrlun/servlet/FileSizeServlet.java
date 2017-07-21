@@ -23,6 +23,7 @@ public class FileSizeServlet extends HttpServlet {
 		//out.write("已上传文件大小:"+String.valueOf(fileSizes)+"MB");
 		//out.write("已上传文件大小:"+String.valueOf(fileSize/1024)+"KB");
 		out.write(String.valueOf(fileSize));
+		//out
 	}
 
 }
